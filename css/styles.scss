@@ -1,3 +1,127 @@
-body {
-  background-color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+// === MIXINS ===
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
 }
+
+@mixin quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+// === / MIXINS ===
+
+// === VARIABLES ===
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$padding-vertical-sm: 60px;
+$padding-vertical: 120px;
+// === / VARIABLES ===
+
+// === COMMON ===
+body {
+  @include roboto;
+}
+
+.wrapper-outer {
+
+}
+
+.wrapper-inner {
+  max-width: 900px;
+  margin: 0 auto;
+
+  &__wide {
+    max-width: 1200px;
+  }
+}
+
+// === / COMMON ===
+
+// === HEADER ===
+.section-header {
+
+}
+
+// === / HEADER ===
+
+// === HERO IMAGE ===
+.section-hero-image {
+
+}
+
+// === / HERO IMAGE ===
+
+// === CUSTOMERS ===
+.section-customers {
+
+}
+
+// === / CUSTOMERS ===
+
+// === PLAN AND MANAGE===
+.section-plan-and-manage {
+
+}
+
+// === / PLAN AND MANAGE===
+
+// === FEATURES ===
+.section-features {
+
+}
+
+// === / FEATURES ===
+
+// === STATS ===
+.section-stats {
+
+}
+
+// === / STATS ===
+
+// === BLOG ===
+.section-blog {
+
+}
+
+// === / BLOG ===
+
+// === QUOTES ===
+.section-quotes {
+
+}
+
+// === / QUOTES ===
+
+// === GET STARTED ===
+.section-get-started {
+
+}
+
+// === / GET STARTED ===
+
+// === FAQ ===
+.section-faq {
+
+}
+
+// === / FAQ ===
+
+// === NEWSLETTER ===
+.section-newsletter {
+
+}
+
+// === / NEWSLETTER ===
+
+// === FOOTER ===
+.section-footer {
+
+}
+
+// === / FOOTER ===
+

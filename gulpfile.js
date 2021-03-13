@@ -1,20 +1,33 @@
-const gulp = require("gulp");
+const {src, dest, watch} = require("gulp");
 const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
+const gulpStylelint = require("gulp-stylelint");
 
 function style () {
-    return gulp.src("./scss/**/*.scss").pipe(sass()).pipe(gulp.dest("./css")).pipe(browserSync.stream())
+    return src("./css/**/*.scss")
+        .pipe(gulpStylelint({
+            reporters: [
+                {
+                    formatter: "string",
+                    console: true
+                }
+            ]
+        }))
+        .pipe(sass().on("error", sass.logError))
+        .pipe(dest("./css/"))
+        .pipe(browserSync.stream());
 }
 
-function watch () {
+function watcher () {
     browserSync.init({
         server: {
             baseDir: "./"
         }
-    })
-    gulp.watch("./scss/**/*.scss", style);
-    gulp.watch("./*.html").on("change", browserSync.reload);
+    });
+    watch("./css/**/*.scss", style);
+    watch("./*.html").on("change", browserSync.reload);
+    watch("./js/**/*.js").on("change", browserSync.reload);
 }
 
 exports.style = style;
-exports.watch = watch;
+exports.watch = watcher;

@@ -3,8 +3,51 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
-.wrapper-inner {
+.section-outer {
+  border-bottom: 1px solid #d8e3fe; }
+
+.section-inner {
   max-width: 900px;
-  margin: 0 auto; }
-  .wrapper-inner__wide {
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  .section-inner__wide {
     max-width: 1200px; }
+
+.section-header .section-inner {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.section-hero-image {
+  background-color: #f4f7ff; }
+
+.section-customers .section-inner {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.section-plan-and-manage {
+  background-color: #f5f8ff; }
+
+.section-stats {
+  background-color: #e0e9ff; }
+  .section-stats .section-inner {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+.section-blog {
+  background-color: #f5f8ff; }
+
+.section-quotes {
+  background-color: #eaf0ff; }
+
+.section-get-started {
+  background-color: #6888ff; }
+
+.section-newsletter {
+  background-color: #fcfdff; }
+
+.section-footer {
+  border-bottom: 0; }
+  .section-footer .section-inner {
+    padding-top: 60px;
+    padding-bottom: 60px; }

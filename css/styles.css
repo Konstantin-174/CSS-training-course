@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #8d96bd; }
 
 .section-outer {
   border-bottom: 1px solid #d8e3fe; }
@@ -29,6 +30,37 @@ body {
     color: #3a79ff; }
     .btn--primary:hover {
       background-color: #b9d0ff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Quicksand', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  color: #3d4f9f; }
+
+h1,
+h2 {
+  margin-bottom: 28px;
+  font-size: 48px; }
+
+h3 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 16px;
+  font-size: 10px; }
+
+.ta-c {
+  text-align: center; }
 
 .section-header .section-inner {
   padding-top: 20px;
@@ -89,6 +121,42 @@ body {
 
 .section-hero-image {
   background-color: #f4f7ff; }
+
+.slider-hero-image {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .slider-hero-image__item {
+    height: 560px;
+    text-align: center;
+    background-position: 50% 50%;
+    background-size: cover; }
+    .slider-hero-image__item-content h2 {
+      font-weight: 300; }
+      .slider-hero-image__item-content h2 span {
+        font-weight: 500; }
+    .slider-hero-image__item-content .text {
+      line-height: 1.5; }
+
+.icon-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  background-color: #ffff;
+  box-shadow: 0 10px 50px rgba(201, 209, 231, 0.6); }
+  .icon-play::before {
+    display: block;
+    margin-left: 16px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-color: transparent;
+    border-width: 8px 12px;
+    border-style: solid;
+    border-left-color: #5e81ff; }
 
 .section-customers .section-inner {
   padding-top: 60px;

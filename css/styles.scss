@@ -59,12 +59,14 @@ body {
 .btn {
   @include quicksand;
 
+  box-sizing: border-box;
   font-weight: $fw-bold;
   font-size: $fs-sm;
   padding: $base * 3 $base * 4;
   margin: 0;
-  border: 0;
+  background: none;
   border-radius: 2px;
+  border: 1px solid transparent;
   text-decoration: none;
   transition: $transition;
 
@@ -74,6 +76,26 @@ body {
 
     &:hover {
       background-color: darken(#d2e1ff, 5%);
+    }
+  }
+
+  &--secondary {
+    background-color: #4c85ff;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#4c85ff, 5%);
+    }
+  }
+
+  &--no-bg {
+    //background-color: #d2e1ff;
+    border: 1px solid #d1d1e4;
+    color: #adb4d2;
+
+    &:hover {
+      color: darken(#adb4d2, 2%);
+      border: 1px solid darken(#adb4d2, 2%);
     }
   }
 }
@@ -138,6 +160,20 @@ h5 {
     & + & {
       margin-left: $base * 3;
     }
+  }
+}
+
+.btn-group {
+  display: inline-flex;
+
+  .btn:nth-child(1) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .btn:nth-child(2) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 // === / COMMON ===
@@ -291,16 +327,10 @@ h5 {
   background-color: #ffff;
   box-shadow: 0 10px 50px rgba(#c9d1e7, .6);
 
-  &::before {
-    display: block;
-    margin-left: $base * 4;
-    width: 0;
-    height: 0;
-    content: "";
-    border-color: transparent;
-    border-width: $base * 2 $base * 3;
-    border-style: solid;
-    border-left-color: #5e81ff;
+  svg {
+    margin-left: $base;
+    width: $base * 4;
+    height: $base * 4;
   }
 }
 // === / HERO IMAGE ===
@@ -329,10 +359,18 @@ h5 {
 
 // === PLAN AND MANAGE===
 .section-plan-and-manage {
+  position: relative;
   background-color: #f5f8ff;
+  overflow: hidden;
 
   &__content {
     width: 50%;
+
+    .aside-image {
+      position: absolute;
+      top: 0;
+      left: 45%;
+    }
 
     h3 {
       font-weight: $fw-light;
@@ -346,6 +384,12 @@ h5 {
     .text {
       margin-bottom: $base * 12;
       line-height: 2;
+    }
+
+    .btn-group {
+      svg {
+        margin-left: $base;
+      }
     }
   }
 

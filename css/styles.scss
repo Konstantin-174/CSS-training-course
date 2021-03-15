@@ -116,6 +116,30 @@ h5 {
 .ta-c {
   text-align: center;
 }
+
+.dots {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+  &__item {
+    width: $base * 2;
+    height: $base * 2;
+    border-radius: 100%;
+    background-color: #d1d6e3;
+    transition: $transition;
+    cursor: pointer;
+
+    &--active {
+      background-color: #5283ff;
+    }
+
+    & + & {
+      margin-left: $base * 3;
+    }
+  }
+}
 // === / COMMON ===
 
 // === HEADER ===
@@ -218,6 +242,14 @@ h5 {
 // === HERO IMAGE ===
 .section-hero-image {
   background-color: #f4f7ff;
+  position: relative;
+
+  .dots {
+    position: absolute;
+    bottom: $base * 7;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .slider-hero-image {
@@ -241,7 +273,9 @@ h5 {
       }
 
       .text {
-        line-height: 1.5;
+        width: 55%;
+        margin: 0 auto $base * 5;
+        line-height: 2;
       }
     }
   }

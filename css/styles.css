@@ -197,6 +197,16 @@ h5 {
 
 .section-plan-and-manage {
   background-color: #f5f8ff; }
+  .section-plan-and-manage__content {
+    width: 50%; }
+    .section-plan-and-manage__content h3 {
+      font-weight: 300;
+      margin-bottom: 28px; }
+      .section-plan-and-manage__content h3 span {
+        font-weight: 500; }
+    .section-plan-and-manage__content .text {
+      margin-bottom: 48px;
+      line-height: 2; }
 
 .section-stats {
   background-color: #e0e9ff; }

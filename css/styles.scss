@@ -330,6 +330,25 @@ h5 {
 // === PLAN AND MANAGE===
 .section-plan-and-manage {
   background-color: #f5f8ff;
+
+  &__content {
+    width: 50%;
+
+    h3 {
+      font-weight: $fw-light;
+      margin-bottom: $base * 7;
+
+      span {
+        font-weight: $fw-medium;
+      }
+    }
+
+    .text {
+      margin-bottom: $base * 12;
+      line-height: 2;
+    }
+  }
+
 }
 
 // === / PLAN AND MANAGE===

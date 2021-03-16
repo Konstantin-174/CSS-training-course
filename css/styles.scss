@@ -407,14 +407,28 @@ h5 {
 
 .features-list {
   display: flex;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   text-align: center;
   list-style: none;
 
   &__item {
-    flex-basis: 20%;
+    position: relative;
+    flex-basis: 25%;
+
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+
+    &:not(:first-child)::before { // Рисуем полоску между блоками
+      position: absolute;
+      top: 120px;
+      left: -34px;
+      content: "";
+      height: 1px;
+      width: 28px;
+      background-color: #dae4fe;
+    }
 
     &-icon {
       display: flex;

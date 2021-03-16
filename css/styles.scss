@@ -79,6 +79,15 @@ body {
     }
   }
 
+  &--danger {
+    background-color: #ffd7d7;
+    color: #d43f3f;
+
+    &:hover {
+      background-color: darken(#ffd7d7, 5%);
+    }
+  }
+
   &--secondary {
     background-color: #4c85ff;
     color: #fff;
@@ -400,17 +409,26 @@ h5 {
 
 // === FEATURES ===
 .section-features {
+  background: url(../images/features_logo/clouds.svg) no-repeat 50% 50%;
+
   h4 {
     font-weight: $fw-medium;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 
 .features-list {
   display: flex;
-  margin: 0;
+  margin: 0 0 $base * 23;
   padding: 0;
   text-align: center;
   list-style: none;
+  //margin-bottom: ;
 
   &__item {
     position: relative;
@@ -452,6 +470,33 @@ h5 {
     &-text {
       line-height: 2;
     }
+  }
+}
+
+.or-block {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 $base * 4;
+  font-weight: $fw-medium;
+  font-size: $fs-sm;
+  line-height: $base * 10;
+
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    width: $base * 4;
+    height: 1px;
+    background-color: #dae4fe;
+  }
+
+  &::before {
+    margin-right: $base * 4;
+  }
+
+  &::after {
+    margin-left: $base * 4;
   }
 }
 

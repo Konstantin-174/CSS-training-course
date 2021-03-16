@@ -32,6 +32,11 @@ body {
     color: #3a79ff; }
     .btn--primary:hover {
       background-color: #b9d0ff; }
+  .btn--danger {
+    background-color: #ffd7d7;
+    color: #d43f3f; }
+    .btn--danger:hover {
+      background-color: #ffbebe; }
   .btn--secondary {
     background-color: #4c85ff;
     color: #fff; }
@@ -233,12 +238,18 @@ h5 {
     .section-plan-and-manage__content .btn-group svg {
       margin-left: 4px; }
 
-.section-features h4 {
-  font-weight: 500; }
+.section-features {
+  background: url(../images/features_logo/clouds.svg) no-repeat 50% 50%; }
+  .section-features h4 {
+    font-weight: 500; }
+  .section-features .btns {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
 
 .features-list {
   display: flex;
-  margin: 0;
+  margin: 0 0 92px;
   padding: 0;
   text-align: center;
   list-style: none; }
@@ -271,6 +282,24 @@ h5 {
       color: #4074f8; }
     .features-list__item-text {
       line-height: 2; }
+
+.or-block {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 40px; }
+  .or-block::before, .or-block::after {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: #dae4fe; }
+  .or-block::before {
+    margin-right: 16px; }
+  .or-block::after {
+    margin-left: 16px; }
 
 .section-stats {
   background-color: #e0e9ff; }

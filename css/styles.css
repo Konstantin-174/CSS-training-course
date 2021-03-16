@@ -65,6 +65,7 @@ h3 {
   font-size: 36px; }
 
 h4 {
+  margin-bottom: 80px;
   font-size: 24px; }
 
 h5 {
@@ -220,7 +221,7 @@ h5 {
     .section-plan-and-manage__content .aside-image {
       position: absolute;
       top: 0;
-      left: 45%; }
+      left: 50%; }
     .section-plan-and-manage__content h3 {
       font-weight: 300;
       margin-bottom: 28px; }
@@ -231,6 +232,35 @@ h5 {
       line-height: 2; }
     .section-plan-and-manage__content .btn-group svg {
       margin-left: 4px; }
+
+.section-features h4 {
+  font-weight: 500; }
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none; }
+  .features-list__item {
+    flex-basis: 20%; }
+    .features-list__item-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      width: 68px;
+      height: 68px;
+      border-radius: 100%;
+      background-color: #f1f5ff; }
+    .features-list__item-title {
+      margin-bottom: 28px;
+      font-weight: 700;
+      font-size: 15px;
+      color: #4074f8; }
+    .features-list__item-text {
+      line-height: 2; }
 
 .section-stats {
   background-color: #e0e9ff; }

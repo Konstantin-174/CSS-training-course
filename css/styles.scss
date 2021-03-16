@@ -125,6 +125,7 @@ h3 {
 }
 
 h4 {
+  margin-bottom: $base * 20;
   font-size: 24px;
 }
 
@@ -369,7 +370,7 @@ h5 {
     .aside-image {
       position: absolute;
       top: 0;
-      left: 45%;
+      left: 50%;
     }
 
     h3 {
@@ -399,7 +400,45 @@ h5 {
 
 // === FEATURES ===
 .section-features {
+  h4 {
+    font-weight: $fw-medium;
+  }
+}
 
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+
+  &__item {
+    flex-basis: 20%;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto $base * 8;
+      width: $base * 17;
+      height: $base * 17;
+      border-radius: 100%;
+      background-color: #f1f5ff;
+
+    }
+
+    &-title {
+      margin-bottom: $base * 7;
+      font-weight: $fw-bold;
+      font-size: $fs-md;
+      color: #4074f8;
+    }
+
+    &-text {
+      line-height: 2;
+    }
+  }
 }
 
 // === / FEATURES ===

@@ -153,10 +153,11 @@ h5 {
 }
 
 .dots {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
 
   &__item {
     width: $base * 2;

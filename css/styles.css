@@ -304,10 +304,28 @@ h5 {
 .section-stats {
   display: flex;
   background-color: #e0e9ff; }
+  .section-stats_icon {
+    margin-bottom: 24px; }
+  .section-stats_number {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.03em; }
+  .section-stats_text {
+    font-family: 'Quicksand', sans-serif;
+    width: 45%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em; }
   .section-stats__left, .section-stats__right {
+    display: flex;
+    flex-direction: column;
     flex-basis: 50%;
     padding: 64px 88px; }
   .section-stats__left {
+    align-items: flex-end;
     background-color: #6888ff;
     text-align: right;
     color: #ffffff; }

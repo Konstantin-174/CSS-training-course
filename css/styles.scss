@@ -10,6 +10,11 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+@mixin list-null {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 // === / MIXINS ===
 
 // === VARIABLES ===
@@ -153,11 +158,10 @@ h5 {
 }
 
 .dots {
+  @include list-null;
+
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 
   &__item {
     width: $base * 2;
@@ -190,6 +194,7 @@ h5 {
     border-bottom-left-radius: 0;
   }
 }
+
 // === / COMMON ===
 
 // === HEADER ===
@@ -218,10 +223,9 @@ h5 {
 }
 
 .nav-wrapper {
+  @include list-null;
+
   display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 
   &__item {
     & + & {
@@ -254,11 +258,10 @@ h5 {
 }
 
 .socials-wrapper {
+  @include list-null;
+
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 
   &__item {
     & + & {
@@ -303,9 +306,7 @@ h5 {
 }
 
 .slider-hero-image {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-null;
 
   &__item {
     height: $base * 140;
@@ -347,6 +348,7 @@ h5 {
     height: $base * 4;
   }
 }
+
 // === / HERO IMAGE ===
 
 // === CUSTOMERS ===
@@ -523,6 +525,7 @@ h5 {
     font-size: $fs-xl;
     letter-spacing: 0.03em;
   }
+
   &_text {
     @include quicksand;
 
@@ -560,6 +563,30 @@ h5 {
 // === BLOG ===
 .section-blog {
   background-color: #f5f8ff;
+}
+
+.slider-blog {
+  @include list-null;
+
+  margin-bottom: $base*25;
+  background-color: #ffffff;
+  border: 1px solid #d8e3fe;
+  box-shadow: 0 15px 50px #eff4ff;
+
+  &__item {
+    display: flex;
+    padding: $base*16 $base*8;
+
+    &-gallery,
+    &-content {
+      flex-basis: 45%;
+    }
+
+    &-gallery {}
+    &-content {
+      margin-left: 10%;
+    }
+  }
 }
 
 // === / BLOG ===

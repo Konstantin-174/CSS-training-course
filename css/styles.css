@@ -67,7 +67,8 @@ h2 {
   font-size: 48px; }
 
 h3 {
-  font-size: 36px; }
+  font-size: 36px;
+  margin-bottom: 32px; }
 
 h4 {
   margin-bottom: 80px;
@@ -352,6 +353,10 @@ h5 {
       flex-basis: 45%; }
     .slider-blog__item-content {
       margin-left: 10%; }
+      .slider-blog__item-content .text {
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 2; }
 
 .section-quotes {
   background-color: #eaf0ff; }

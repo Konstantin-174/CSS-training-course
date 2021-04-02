@@ -1,0 +1,94 @@
+// === HEADER ===
+.section-header {
+
+  .section-inner {
+    padding-top: $padding-vertical-xs;
+    padding-bottom: $padding-vertical-xs;
+  }
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-color: #5e81fe;
+  width: $base * 6;
+  height: $base * 6;
+  border-radius: 100%;
+}
+
+.nav {
+  margin-left: $base * 18;
+}
+
+.nav-wrapper {
+  @include list-null;
+
+  display: flex;
+
+  &__item {
+    & + & {
+      margin-left: $base * 10; // Отступы слева от ссылок
+    }
+
+    &-link {
+      @include quicksand;
+
+      font-size: $fs-sm;
+      font-weight: $fw-medium;
+      color: $color-primary;
+      text-decoration: none;
+      transition: $transition;
+
+      &:hover {
+        color: $color-secondary;
+      }
+
+      &--active {
+        font-weight: $fw-bold;
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.socials {
+  margin-left: auto;
+}
+
+.socials-wrapper {
+  @include list-null;
+
+  display: flex;
+  align-items: center;
+
+  &__item {
+    & + & {
+      margin-left: $base * 10; // Отступы слева от ссылок
+    }
+
+
+    &-link {
+      path {
+        fill: $color-primary;
+        transition: $transition;
+      }
+
+      &:hover {
+        path {
+          fill: $color-secondary;
+        }
+      }
+
+
+    }
+  }
+}
+
+.btn-wrapper {
+  margin-left: $base * 11;
+}
+
+// === / HEADER ===

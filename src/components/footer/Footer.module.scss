@@ -1,6 +1,10 @@
 @import "src/styles/variables";
 
 .wrapper {
+  border-bottom: 0;
+}
+
+.inner {
   padding-top: $padding-vertical-sm;
   padding-bottom: $padding-vertical-sm;
 }

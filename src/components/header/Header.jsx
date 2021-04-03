@@ -5,7 +5,7 @@ import s from './Header.module.scss'
 const Header = () => {
     return (
         <header className={classes.sectionOuter}>
-            <div className={`${classes.sectionInner} + ${classes.wide} + ${s.wrapper}`}>
+            <div className={`${classes.sectionInner} + ${classes.wide} + ${s.inner}`}>
                 HEADER
             </div>
         </header>

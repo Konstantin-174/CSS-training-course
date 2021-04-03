@@ -1,14 +1,14 @@
 import React from 'react';
 import classes from '../../styles/Common.module.scss'
 
-const Header = () => {
+const Faq = () => {
     return (
-        <header className={classes.sectionOuter}>
+        <section className={classes.sectionOuter}>
             <div className={classes.sectionInner}>
-                HEADER
+                FAQ
             </div>
-        </header>
+        </section>
     )
 }
 
-export default Header;
+export default Faq;

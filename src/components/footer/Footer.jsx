@@ -1,14 +1,14 @@
 import React from 'react';
 import classes from '../../styles/Common.module.scss'
 
-const Header = () => {
+const Footer = () => {
     return (
-        <header className={classes.sectionOuter}>
+        <footer className={classes.sectionOuter}>
             <div className={classes.sectionInner}>
-                HEADER
+                FOOTER
             </div>
-        </header>
+        </footer>
     )
 }
 
-export default Header;
+export default Footer;

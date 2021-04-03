@@ -8,3 +8,85 @@
   padding-top: $padding-vertical-sm;
   padding-bottom: $padding-vertical-sm;
 }
+
+.mainNav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: $base * 6;
+  height: $base * 6;
+  border-radius: 100%;
+  background-color: #5e81fe;
+}
+
+.nav {
+  margin-left: $base * 18;
+}
+
+.wrapperItem {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  & + & {
+    margin-left: $base * 10;
+  }
+}
+
+.itemLink {
+  @include quicksand;
+
+  font-weight: $fw-medium;
+  font-size: $fs-sm;
+  line-height: $base * 4;
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    color: #5e81fe;
+  }
+}
+
+.active {
+  font-weight: $fw-bold;
+  color: #5e81fe;
+}
+
+.socials {
+  margin-left: auto;
+}
+
+.socialsLink {
+  path {
+    fill: #b6bac7;
+    transition: $transition;
+  }
+
+  &:hover {
+    path {
+      fill: #5e81fe;
+    }
+  }
+}
+
+.btn {
+  margin-left: $base * 11;
+}
+
+.copyright {
+  @include quicksand;
+
+  margin-top: $base * 7;
+  margin-left: $base * 18;
+  font-size: $fs-sm;
+  font-weight: $fw-medium;
+  color: #aeb8d0;
+  letter-spacing: 0.05em;
+}

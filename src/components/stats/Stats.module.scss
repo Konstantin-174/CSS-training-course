@@ -1,6 +1,10 @@
 @import "src/styles/variables";
 
 .wrapper {
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+}
+
+.inner {
   padding-top: $padding-vertical-sm;
   padding-bottom: $padding-vertical-sm;
 }

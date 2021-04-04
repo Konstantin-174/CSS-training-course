@@ -1,5 +1,60 @@
 @import "src/styles/variables";
 
+h2 {
+  font-weight: $fw-light;
+}
+
+span {
+  font-weight: $fw-medium;
+}
+
 .wrapper {
   background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+}
+
+.sliderWrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sliderWrapperItem {
+  height: $base * 140;
+  text-align: center;
+  //background-position: 50% 50%;
+  background: url("./img/hero_image_bg.png");
+  background-size: cover;
+}
+
+.sliderText {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.sliderBtnWrap {
+  padding: $base * 3 $base * 4;
+}
+
+.iconPlay {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 50px rgba(#c9d1e7, 60%);
+
+  &::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: $base * 4;
+    border-style: solid;
+    border-color: transparent;
+    border-width: $base * 2 $base * 3;
+    border-left-color: #5e81ff;
+  }
 }

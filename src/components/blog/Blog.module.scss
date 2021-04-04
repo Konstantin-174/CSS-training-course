@@ -3,3 +3,44 @@
 .wrapper {
   background-color: #f5f8ff;
 }
+
+.sliderWrap {
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #d8e3fe;
+  box-shadow: 0 15px 50px #eff4ff;
+}
+
+.sliderItem {
+  display: flex;
+  margin: $base * 16 $base * 8;
+}
+
+.sliderGallery,
+.sliderContent {
+  flex-basis: 50%;
+}
+
+.sliderGallery {
+
+}
+
+.sliderContent {
+
+}
+
+.title {
+
+}
+
+.text {
+  margin-bottom: $base * 8;
+  font-size: $fs-md;
+  line-height: $base * 7;
+  letter-spacing: 0.03em;
+}
+
+.dots {
+  margin-top: $base * 25;
+}
+

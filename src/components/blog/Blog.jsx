@@ -10,16 +10,16 @@ const Blog = () => {
                 <h4 className={classes.taC}>
                     Read about our app
                 </h4>
-                <ul className="slider-blog">
-                    <li className="slider-blog__item">
-                        <div className="slider-blog__item-gallery">
+                <ul className={s.sliderWrap}>
+                    <li className={s.sliderItem}>
+                        <div className={s.sliderGallery}>
 
                         </div>
-                        <div className="slider-blog__item-content">
-                            <h3 className="title">
+                        <div className={s.sliderContent}>
+                            <h3 className={s.title}>
                                 How to start planning
                             </h3>
-                            <div className="text">
+                            <div className={s.text}>
                                 Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
                                 tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes
                                 mei ea.
@@ -36,7 +36,7 @@ const Blog = () => {
                         </div>
                     </li>
                 </ul>
-                <ul className={classes.dots}>
+                <ul className={`${classes.dots} + ${s.dots}`}>
                     <li className={`${classes.dotsItem} + ${classes.dotsItemActive}`}> </li>
                     <li className={classes.dotsItem}> </li>
                     <li className={classes.dotsItem}> </li>

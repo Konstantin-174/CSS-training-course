@@ -1,0 +1,75 @@
+@import "src/styles/variables";
+
+h4 {
+  font-weight: $fw-medium;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background: url(img/clouds.svg) no-repeat 50% 50%;
+}
+
+.listWrap {
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+.listItem {
+  flex-basis: 25%;
+  position: relative;
+
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+
+  &:not(:first-child)::before {
+    position: absolute;
+    top: 130px;
+    left: -34px;
+    width: 28px;
+    height: 1px;
+    background-color: #dae4fe;
+    content: '';
+  }
+}
+
+.icon {
+  margin-bottom: $base * 8;
+}
+
+.title {
+  margin-bottom: $base * 7;
+  font-weight: $fw-bold;
+  font-size: $fs-md;
+  color: #4074f8;
+  line-height: 25px;
+}
+
+.text {
+  margin-bottom: $base * 23;
+  line-height: 2;
+}
+
+.br {
+  display: inline-flex;
+  align-items: center;
+  font-size: $fs-sm;
+  font-weight: $fw-medium;
+
+  &::before,
+  &::after {
+    margin-left: $base * 3;
+    margin-right: $base * 3;
+    content: '';
+    display: block;
+    width: $base * 4;
+    height: 1px;
+    background-color: #dae4fe;
+  }
+}

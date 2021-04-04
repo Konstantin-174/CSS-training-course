@@ -1,10 +1,42 @@
 @import "src/styles/variables";
 
 .wrapper {
+  display: flex;
   background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
 }
 
-.inner {
-  padding-top: $padding-vertical-sm;
-  padding-bottom: $padding-vertical-sm;
+.left,
+.right {
+  @include quicksand;
+
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: $base * 16 $base * 22;
+  letter-spacing: 0.03em;
+}
+
+.left {
+  align-items: flex-end;
+  text-align: right;
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  color: #ffffff;
+}
+
+.right {
+  color: #5e80ff;
+}
+
+.icon {
+  margin-bottom: $base * 6;
+}
+
+.number {
+  font-size: $fs-xl;
+  line-height: $base * 21;
+}
+
+.text {
+  font-size: $fs-lg;
+  width: 45%;
 }

@@ -18,23 +18,70 @@
 
 .sliderGallery,
 .sliderContent {
-  flex-basis: 50%;
+  @include list-null;
+  flex-basis: 45%;
 }
 
 .sliderGallery {
+  display: grid;
 
+  grid-template-areas:
+"b s1"
+"b s2";
+
+  grid-template-rows: 135px 145px;
+  grid-template-columns: 260px 135px;
+  grid-gap: 10px;
+
+  margin-right: 10%;
+}
+
+.big {
+  grid-area: b;
+
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  background: linear-gradient(13.46deg, rgba(255, 199, 53, 0.44) 1.89%, rgba(255, 227, 154, 0.93) 1.9%, rgba(255, 159, 90, 0) 68.24%);
+  filter: drop-shadow(0 15px 100px #e5ebf8);
+}
+
+.small1 {
+  grid-area: s1;
+
+  display: block;
+  border-radius: 5px;
+  background: linear-gradient(27.48deg, rgba(255, 53, 53, 0.48) 14.02%, rgba(255, 179, 90, 0) 68%);
+  filter: drop-shadow(0 15px 100px #e5ebf8);
+}
+
+.small2 {
+  grid-area: s2;
+
+  display: block;
+  border-radius: 5px;
+  background: linear-gradient(13.49deg, rgba(53, 170, 255, 0.68) 11.59%, rgba(90, 136, 255, 0) 96.88%);
+  filter: drop-shadow(0 15px 100px #e5ebf8);
+}
+
+.loupe {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $base * 16;
+  height: $base * 16;
+  border-radius: 100%;
+  background: no-repeat 50% 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sliderContent {
-
-}
-
-.title {
-
 }
 
 .text {
-  margin-bottom: $base * 8;
+  margin-bottom: $base * 10;
   font-size: $fs-md;
   line-height: $base * 7;
   letter-spacing: 0.03em;

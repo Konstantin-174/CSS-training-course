@@ -29,6 +29,8 @@ h2 {
 }
 
 h3 {
+  @include quicksand;
+
   margin-bottom: $base * 8;
   font-size: 36px;
 }

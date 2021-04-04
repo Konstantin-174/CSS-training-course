@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from '../../styles/Common.module.scss'
 import s from './Blog.module.scss'
+import loupe from './img/loupe.svg'
 
 const Blog = () => {
     return (
@@ -13,10 +14,16 @@ const Blog = () => {
                 <ul className={s.sliderWrap}>
                     <li className={s.sliderItem}>
                         <div className={s.sliderGallery}>
-
+                            <a href="#" className={s.big}>
+                                <span className={s.loupe}>
+                                    <img src={loupe} alt="Loupe"/>
+                                </span>
+                            </a>
+                            <a href="#" className={s.small1}> </a>
+                            <a href="#" className={s.small2}> </a>
                         </div>
                         <div className={s.sliderContent}>
-                            <h3 className={s.title}>
+                            <h3>
                                 How to start planning
                             </h3>
                             <div className={s.text}>

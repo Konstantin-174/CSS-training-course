@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from '../../styles/Common.module.scss'
 import s from './Blog.module.scss'
-import loupe from './img/loupe.svg'
+import loupe from './logo/loupe.svg'
+import vector from './logo/Vector.svg'
 
 const Blog = () => {
     return (
@@ -42,6 +43,12 @@ const Blog = () => {
                             </div>
                         </div>
                     </li>
+                    <a href="#" className={`${s.btn} + ${s.btnPref}`}>
+                        <img src={vector} alt="Vector"/>
+                    </a>
+                    <a href="#" className={`${s.btn} + ${s.btnNext}`}>
+                        <img src={vector} alt="Vector"/>
+                    </a>
                 </ul>
                 <ul className={`${classes.dots} + ${s.dots}`}>
                     <li className={`${classes.dotsItem} + ${classes.dotsItemActive}`}> </li>

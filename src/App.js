@@ -24,8 +24,8 @@ function App() {
             <Stats/>
             <Blog/>
             <Quotes/>
-            <GetStarted/>
             <Faq/>
+            <GetStarted/>
             <NewsLetter/>
             <Footer/>
         </div>

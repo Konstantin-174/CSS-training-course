@@ -1,0 +1,64 @@
+@import 'src/styles/variables.scss';
+
+h4 {
+  font-weight: $fw-medium;
+}
+
+.accordion {
+  @include list-null;
+
+
+}
+
+.item {
+  border-bottom: 1px solid #d8e3fe;
+}
+
+.trigger {
+  display: flex;
+  cursor: pointer;
+}
+
+.active {
+  .arrow {
+    stroke: #495274
+  }
+}
+
+.triggerIcon {
+  width: $base * 15;
+
+  color: #495274;
+    //stroke: #8e96b7;
+    //stroke: #495274
+}
+
+.triggerText {
+  font-weight: $fw-bold;
+  font-size: $fs-md;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #495274;
+}
+
+.content {
+  display: flex;
+}
+
+.contentText {
+  flex-grow: 1;
+  font-weight: $fw-regular;
+  font-size: $fs-md;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.contentBtn {
+  background: #E8ECF4;
+  border: none;
+
+  a {
+    text-decoration: none;
+    color: #7382A3;
+  }
+}

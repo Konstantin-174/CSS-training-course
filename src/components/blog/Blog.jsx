@@ -10,7 +10,7 @@ const Blog = () => {
             <div className={classes.sectionInner}>
                 <h5 className={classes.taC}>OUR RESOURCES</h5>
                 <h4 className={classes.taC}>
-                    Read about our app
+                    Start reading our blog
                 </h4>
                 <ul className={s.sliderWrap}>
                     <li className={s.sliderItem}>

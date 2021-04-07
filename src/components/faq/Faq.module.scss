@@ -14,26 +14,34 @@ h4 {
   border-bottom: 1px solid #d8e3fe;
 }
 
+
 .trigger {
   display: flex;
   cursor: pointer;
+  align-items: center;
+  padding: $base * 4;
 }
 
-.active {
-  .arrow {
-    stroke: #495274
-  }
-}
 
 .triggerIcon {
-  width: $base * 15;
+  margin-right: $base * 4;
+  color: #8e96b7;
+}
 
+.triggerIconActive {
+  margin-right: $base * 4;
   color: #495274;
-    //stroke: #8e96b7;
-    //stroke: #495274
 }
 
 .triggerText {
+  font-weight: $fw-bold;
+  font-size: $fs-md;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #8e96b7;
+}
+
+.triggerTextActive {
   font-weight: $fw-bold;
   font-size: $fs-md;
   line-height: 2;
@@ -43,9 +51,11 @@ h4 {
 
 .content {
   display: flex;
+  padding: 0 $base * 4 $base * 4;
 }
 
 .contentText {
+  padding-left: $base * 11;
   flex-grow: 1;
   font-weight: $fw-regular;
   font-size: $fs-md;
@@ -54,11 +64,7 @@ h4 {
 }
 
 .contentBtn {
-  background: #E8ECF4;
-  border: none;
-
-  a {
-    text-decoration: none;
-    color: #7382A3;
-  }
+  margin-left: $base * 15;
+  text-decoration: none;
+  color: #7382A3;
 }

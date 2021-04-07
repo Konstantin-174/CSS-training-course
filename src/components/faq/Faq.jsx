@@ -14,8 +14,24 @@ const Faq = () => {
                 <ul className={s.accordion}>
                     <li className={s.item}>
                         <div className={s.trigger}>
-                                <BsChevronUp className={s.triggerIcon} size="1.5em"/>
+                            <BsChevronDown className={s.triggerIcon} size="1.5em" stroke-width="1"/>
                             <div className={s.triggerText}>
+                                Reque insolens in vel?
+                            </div>
+                        </div>
+                    </li>
+                    <li className={s.item}>
+                        <div className={s.trigger}>
+                            <BsChevronDown className={s.triggerIcon} size="1.5em" stroke-width="1"/>
+                            <div className={s.triggerText}>
+                                Vis rebum error graecis ea, id sit postea accusamus?
+                            </div>
+                        </div>
+                    </li>
+                    <li className={s.item}>
+                        <div className={s.trigger}>
+                                <BsChevronUp className={s.triggerIconActive} size="1.5em" stroke-width="1"/>
+                            <div className={s.triggerTextActive}>
                                 Lorem repudiandae ne nec?
                             </div>
                         </div>
@@ -23,14 +39,29 @@ const Faq = () => {
                             <div className={s.contentText}>
                                 Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
                             </div>
-                            <div className={`${classes.btn} + ${classes.noBgBtn} + ${s.contentBtn}`}>
-                                <a href="#">
+                            <div>
+                                <a href="#" className={`${classes.btn} + ${classes.noBgBtn} + ${s.contentBtn}`}>
                                     Go to documentation
                                 </a>
                             </div>
                         </div>
                     </li>
-
+                    <li className={s.item}>
+                        <div className={s.trigger}>
+                            <BsChevronDown className={s.triggerIcon} size="1.5em" stroke-width="1"/>
+                            <div className={s.triggerText}>
+                                Ad dicit numquam vel. Et eos iudico feugait percipitur?
+                            </div>
+                        </div>
+                    </li>
+                    <li className={s.item}>
+                        <div className={s.trigger}>
+                            <BsChevronDown className={s.triggerIcon} size="1.5em" stroke-width="1"/>
+                            <div className={s.triggerText}>
+                                Sea no dico percipitur. Fierent constituam definitiones id eum?
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>

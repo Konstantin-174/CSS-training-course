@@ -17,7 +17,7 @@ const NewsLetter = () => {
                 <div className={s.right}>
                     <form action="">
                         <input type="text" placeholder="Email address" className={s.input}/>
-                        <button className={`${classes.btn} + ${classes.primaryBtn} + ${s.btnRight}`}>Save me</button>
+                        <button className={`${classes.btn} + ${s.btnRight}`}>Save me</button>
                     </form>
                 </div>
             </div>

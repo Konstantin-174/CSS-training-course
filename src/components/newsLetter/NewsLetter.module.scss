@@ -2,4 +2,38 @@
 
 .wrapper {
   background-color: #fcfdff;
+
+  .inner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.left,
+.right {
+  flex-basis: 50%;
+}
+
+.left {
+
+  .title {
+    @include quicksand;
+
+    font-weight: $fw-bold;
+    font-size: $fs-lg;
+    line-height: 2;
+    color: #3D4F9F;
+  }
+
+  .text {
+    font-weight: $fw-regular;
+    font-size: $fs-md;
+    line-height: 2;
+    letter-spacing: 0.03em;
+  }
+}
+
+
+.right {
+
 }

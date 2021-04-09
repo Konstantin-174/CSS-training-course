@@ -15,14 +15,10 @@ const NewsLetter = () => {
                     </div>
                 </div>
                 <div className={s.right}>
-                    <div className={classes.btnGroup}>
-                        <a href="#" className={`${classes.btn} + ${classes.secondaryBtn}`}>
-                            Email address
-                        </a>
-                        <a href="#" className={`${classes.btn} + ${classes.noBgBtn}`}>
-                            Save me
-                        </a>
-                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Email address" className={s.input}/>
+                        <button className={`${classes.btn} + ${classes.primaryBtn} + ${s.btnRight}`}>Save me</button>
+                    </form>
                 </div>
             </div>
         </section>

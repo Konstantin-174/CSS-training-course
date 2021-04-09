@@ -9,12 +9,11 @@
   }
 }
 
-.left,
-.right {
-  flex-basis: 50%;
-}
+
 
 .left {
+  margin-right: $base * 20;
+
 
   .title {
     @include quicksand;
@@ -35,5 +34,26 @@
 
 
 .right {
+  flex-basis: 85%;
 
+  .input {
+    margin-right: $base * 4;
+    padding: $base * 5.3 $base * 42 $base * 5.3 $base * 5.3;
+    outline: none;
+    border: none;
+    background: #EFEFF7;
+    border-radius: 5px;
+    font-weight: $fw-bold;
+    font-size: $fs-sm;
+
+    color: #7A85AD;
+  }
+
+  .btnRight {
+    padding: $base * 5 $base * 15;
+    background: #4D6CE1;
+    box-shadow: 0 5px 15px rgba(116, 104, 255, 0.2);
+    border-radius: 5px;
+    color: #ffffff;
+  }
 }

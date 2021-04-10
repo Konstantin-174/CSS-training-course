@@ -9,7 +9,7 @@
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #d8e3fe;
-  box-shadow: 0 15px 50px #eff4ff;
+  box-shadow: 0 $base * 4.25 $base * 12.5 #eff4ff;
 }
 
 .sliderItem {
@@ -30,9 +30,9 @@
 "b s1"
 "b s2";
 
-  grid-template-rows: 135px 145px;
-  grid-template-columns: 260px 135px;
-  grid-gap: 10px;
+  grid-template-rows: $base * 33.75 $base * 36.25;
+  grid-template-columns: $base * 65 $base * 33.75;
+  grid-gap: $base * 2.5;
 
   margin-right: 10%;
 }
@@ -42,16 +42,16 @@
 
   position: relative;
   display: block;
-  border-radius: 5px;
+  border-radius: $base * 1.25;
   background: linear-gradient(13.46deg, rgba(255, 199, 53, 0.44) 1.89%, rgba(255, 227, 154, 0.93) 1.9%, rgba(255, 159, 90, 0) 68.24%);
-  filter: drop-shadow(0 15px 100px #e5ebf8);
+  filter: drop-shadow(0 $base * 4.25 $base * 25 #e5ebf8);
 }
 
 .small1 {
   grid-area: s1;
 
   display: block;
-  border-radius: 5px;
+  border-radius: $base * 1.25;
   background: linear-gradient(27.48deg, rgba(255, 53, 53, 0.48) 14.02%, rgba(255, 179, 90, 0) 68%);
   filter: drop-shadow(0 15px 100px #e5ebf8);
 }
@@ -60,9 +60,9 @@
   grid-area: s2;
 
   display: block;
-  border-radius: 5px;
+  border-radius: $base * 1.25;
   background: linear-gradient(13.49deg, rgba(53, 170, 255, 0.68) 11.59%, rgba(90, 136, 255, 0) 96.88%);
-  filter: drop-shadow(0 15px 100px #e5ebf8);
+  filter: drop-shadow(0 $base * 4.25 $base * 25 #e5ebf8);
 }
 
 .loupe {

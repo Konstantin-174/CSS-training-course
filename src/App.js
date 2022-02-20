@@ -14,22 +14,22 @@ import NewsLetter from './components/newsLetter/NewsLetter';
 import Footer from './components/footer/Footer';
 
 function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <HeroImage/>
-            <Customers/>
-            <PlanAndManage/>
-            <Features/>
-            <Stats/>
-            <Blog/>
-            <Quotes/>
-            <Faq/>
-            <GetStarted/>
-            <NewsLetter/>
-            <Footer/>
-        </div>
-    );
+  return (
+      <div className="App">
+        <Header/>
+        <HeroImage/>
+        <Customers/>
+        <PlanAndManage/>
+        <Features/>
+        <Stats/>
+        <Blog/>
+        <Quotes/>
+        <Faq/>
+        <GetStarted/>
+        <NewsLetter/>
+        <Footer/>
+      </div>
+  );
 }
 
 export default App;

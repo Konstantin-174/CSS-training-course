@@ -1,1 +1,0 @@
-# Hi there! This is my CSS training project by myself with watching [manual](https://www.youtube.com/watch?v=j83eF9GHRcM&ab_channel=%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%3A%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0)

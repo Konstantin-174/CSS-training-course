@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/css-training-course/static/css/main.dc200b06.css",
+    "main.js": "/css-training-course/static/js/main.501e700f.js",
+    "static/js/787.06c07e41.chunk.js": "/css-training-course/static/js/787.06c07e41.chunk.js",
+    "static/media/illustration.png": "/css-training-course/static/media/illustration.822f94b6b0a9a5f877a5.png",
+    "static/media/hero_image_bg.png": "/css-training-course/static/media/hero_image_bg.bc5b2170b3e85819d119.png",
+    "static/media/clouds.png": "/css-training-course/static/media/clouds.6eb829413d7600a08ce6.png",
+    "static/media/clouds.svg": "/css-training-course/static/media/clouds.fc497e965afbef72a709.svg",
+    "static/media/left.svg": "/css-training-course/static/media/left.61f20febb90707f6190c7904a91111d0.svg",
+    "static/media/right.svg": "/css-training-course/static/media/right.d1bcde3170f5c1e7dccc0a9e25197d38.svg",
+    "static/media/loupe.svg": "/css-training-course/static/media/loupe.54694c20fd019c5b45d3bab5a83bd956.svg",
+    "index.html": "/css-training-course/index.html",
+    "static/media/2.svg": "/css-training-course/static/media/2.b5e9ef886d38e1d5c7322055ebfa80e2.svg",
+    "static/media/4.svg": "/css-training-course/static/media/4.16914c7c82ca4d564081fc6dadf02eee.svg",
+    "static/media/3.svg": "/css-training-course/static/media/3.356a264bd9a347fd3551a169e0d623f7.svg",
+    "static/media/1.svg": "/css-training-course/static/media/1.b021235c72d238ccd1e25e7d76c10125.svg",
+    "static/media/Vector.svg": "/css-training-course/static/media/Vector.974461274a6f28c5601943ca4a52cc83.svg",
+    "main.dc200b06.css.map": "/css-training-course/static/css/main.dc200b06.css.map",
+    "main.501e700f.js.map": "/css-training-course/static/js/main.501e700f.js.map",
+    "787.06c07e41.chunk.js.map": "/css-training-course/static/js/787.06c07e41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc200b06.css",
+    "static/js/main.501e700f.js"
+  ]
+}
